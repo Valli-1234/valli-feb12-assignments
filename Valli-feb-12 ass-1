@@ -1,0 +1,34 @@
+R=100
+M=500
+W=600
+RC=75
+SC=90
+SH=20
+SO=100
+cname=input('enter customer name:')
+cphno=input('enter customer phone number:')
+Rq=int(input('enter number of ravva packets:'))
+Mq=int(input('enter number of maida packets:'))
+Wq=int(input('enter number of wheat packets:'))
+RCq=int(input('enter number of rice packets:'))
+SCq=int(input('enter number of sweetcorns:'))
+SHq=int(input('enter number of shampoo packets:'))
+SO=int(input('enter number of soap packets:'))
+bill=(R*Rq)+(M*Mq)+(W*Wq)+(RC*RCq)+(SC*SCq)+(SH*SHq)+(SO*SOq)
+if bill>5000:
+   disc=bill*10/100
+elif bill>3000:
+   disc=bill*8/100
+elif bill>2000:
+   disc=bill*5/100
+elif bill>1000:
+   disc=bill*3/100
+elif bill>3000:
+   tax=bill*10/100
+else:
+   tax=bill*18/100
+mainbill=bill-disc+tax
+print('bill amount main bill')
+
+
+
